@@ -10,9 +10,11 @@ const app = Vue.createApp({
       }
     },
     methods: {
+      // hide / show books
       toggleShowBooks() {
         this.showBooks =  !this.showBooks
       },
+      //set the book as a favorite
       toggleFav(book) {
         book.isFav = !book.isFav;
       },
