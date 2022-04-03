@@ -4,36 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- vue version -->
   <script src="https://unpkg.com/vue@3.0.0"></script>
-  <style>
-    body{
-      background: #eee;
-      max-width: 960px;
-      margin: 20px auto;
-    }
-    p, h3, ul{
-      margin: 0;
-      padding: 0;
-    }
-    li{
-      list-style-type: none;
-      background: #fff;
-      margin: 20px auto;
-      padding: 10px 20px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-    }
-    li.fav{
-      background: #9effae;
-      color: rgb(143, 143, 143);
-    }
-  </style>
+   <!-- style -->
+   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <h1>Vue JS 3 basics test</h1>
-
+  <h1>Select your favorite books</h1>
   <div id="app">
     <div v-if="showBooks">
       <ul>
